@@ -10,15 +10,15 @@ pipeline {
         }
      }
      
-     stage('Test') { 
+     stage('Test- QA') { 
         steps { 
-           sh 'echo "testing application..."'
+           sh 'echo "testing application n QA env..."'
         }
       }
 
          stage("Deploy application") { 
          steps { 
-           sh 'echo "deploying application..."'
+           sh 'echo "deploying application on QA env..."'
          }
 
      }
@@ -26,3 +26,4 @@ pipeline {
    	}
 
    }
+
